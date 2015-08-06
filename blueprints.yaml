@@ -1,0 +1,27 @@
+name: SocialButtons
+version: 0.9.0
+description: Porting of Ridiculously Responsive Social Sharing Buttons for Grav CMS
+icon: code
+author:
+  name: Giansimon Diblas
+  email: -
+  url: http://diblas.net
+homepage: https://github.com/giansi/grav-plugin-social-buttons
+demo: https://github.com/giansi/grav-plugin-social-buttons
+keywords: plugin, social, share, buttons
+bugs: https://github.com/giansi/grav-plugin-social-buttons/issues
+license: MIT
+
+form:
+  validation: strict
+  fields:
+      enabled:
+        type: toggle
+        label: Plugin status
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool

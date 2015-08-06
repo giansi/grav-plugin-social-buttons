@@ -1,0 +1,15 @@
+enabled: true
+buttons:
+  facebook: true
+  twitter: true
+  googleplus: true
+  linkedin: true
+  reddit: true
+  youtube: false
+  hackernews: false
+  pinterest: false
+  pocket: false
+  tumblr: false
+  vk: false
+  github: false
+  email: true
