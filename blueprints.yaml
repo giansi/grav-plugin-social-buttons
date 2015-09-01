@@ -1,10 +1,10 @@
 name: SocialButtons
-version: 1.0.0
-description: Porting of Ridiculously Responsive Social Sharing Buttons for Grav CMS
-icon: code
+version: 1.0.2
+description: 'Porting of Ridiculously Responsive Social Sharing Buttons for Grav CMS'
+icon: share-alt
 author:
   name: Giansimon Diblas
-  email: -
+  email: info@diblas.net
   url: http://diblas.net
 homepage: https://github.com/giansi/grav-plugin-social-buttons
 demo: https://github.com/giansi/grav-plugin-social-buttons
@@ -25,3 +25,159 @@ form:
           0: Disabled
         validate:
           type: bool
+          
+      buttons.facebook:
+        type: toggle
+        label: Facebook button
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the facebook button
+          
+      buttons.twitter:
+        type: toggle
+        label: Twitter button
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the twitter button
+          
+      buttons.googleplus:
+        type: toggle
+        label: Google plus button
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the google plus button
+          
+      buttons.linkedin:
+        type: toggle
+        label: Linkedin button
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the linkedin button
+          
+      buttons.reddit:
+        type: toggle
+        label: Reddit button
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the reddit button
+          
+      buttons.youtube:
+        type: toggle
+        label: Youtube button
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the youtube button
+          
+      buttons.hackernews:
+        type: toggle
+        label: Hackernews button
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the hackernews button
+          
+      buttons.pinterest:
+        type: toggle
+        label: Pinterest button
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the pinterest button
+          
+      buttons.pocket:
+        type: toggle
+        label: Pocket button
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the pocket button
+          
+      buttons.tumblr:
+        type: toggle
+        label: Tumblr button
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the tumblr button
+          
+      buttons.vk:
+        type: toggle
+        label: VK button
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the vk button
+          
+      buttons.github:
+        type: toggle
+        label: Github button
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the github button
+          
+      buttons.email:
+        type: toggle
+        label: Email button
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the email button
