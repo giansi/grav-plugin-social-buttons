@@ -4,6 +4,7 @@ buttons:
   twitter: true
   googleplus: true
   linkedin: true
+  xing: false
   reddit: true
   youtube: false
   hackernews: false
