@@ -1,3 +1,10 @@
+# v1.0.4
+## 11/27/2015
+
+1. [](#improved)
+    * Added xing social network by @fredericmohr
+    * Added title for share on Twitter by @magikcypress 
+
 # v1.0.3
 ## 11/16/2015
 
