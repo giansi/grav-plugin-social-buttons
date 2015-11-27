@@ -104,6 +104,26 @@ form:
         validate:
           type: text
         help: Enable or disable the linkedin button
+
+      buttons.xing.enabled:
+        type: toggle
+        label: XING button
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the xing button
+        
+      buttons.xing.label:
+        type: text
+        label: Xing button label
+        highlight: 1
+        validate:
+          type: text
+        help: Enable or disable the linkedin button
           
       buttons.reddit.enabled:
         type: toggle

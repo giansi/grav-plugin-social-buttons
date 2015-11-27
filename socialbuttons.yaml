@@ -12,8 +12,11 @@ buttons:
   linkedin: 
     enabled: true
     label: Linkedin 
+  xing: 
+    enabled: false
+    label: Xing
   reddit: 
-    enabled: true
+    enabled: false
     label: Reddit  
   youtube: 
     enabled: false
