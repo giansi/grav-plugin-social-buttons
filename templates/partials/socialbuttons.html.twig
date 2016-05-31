@@ -1,9 +1,20 @@
 <ul class="rrssb-buttons clearfix">
     {% set page_url = socialbuttons_domain ~ url %}
-    {% for name, values in socialbuttons_buttons %}
+    {% set title = page.title %}
 
-    {% if values.enabled %}
-        {% include 'partials/_' ~ name ~ '.html.twig' with {'label': values.label} %}
-    {% endif %}
+    {% set tags = '' %}
+    {% for tag in page.taxonomy.tag %}
+        {% set tags = tags ~ tag %}
+        {% if not loop.last %}
+            {% set tags = tags ~ ',' %}
+        {% endif %}
+    {% endfor %}
+
+    {% for name, values in socialbuttons_buttons %}
+        {% if values.enabled %}
+            {% set account = (values.account is defined) ? values.account %}
+
+            {% include 'partials/_' ~ name ~ '.html.twig' with {'label': values.label, 'title': title, 'account': account, 'tags': tags} %}
+        {% endif %}
     {% endfor %}
 </ul>
