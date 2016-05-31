@@ -6,6 +6,7 @@ buttons:
   twitter: 
     enabled: true
     label: Twitter  
+    account: 
   googleplus: 
     enabled: true
     label: Google+

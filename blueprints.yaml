@@ -64,6 +64,14 @@ form:
         validate:
           type: text
         help: Enable or disable the twitter button
+        
+      buttons.twitter.account:
+        type: text
+        label: Twitter button account
+        highlight: 1
+        validate:
+          type: text
+        help: Twitter account name
           
       buttons.googleplus.enabled:
         type: toggle
