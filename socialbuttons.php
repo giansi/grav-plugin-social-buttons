@@ -41,8 +41,15 @@ class SocialButtonsPlugin extends Plugin
         $this->grav['assets']->addJs('plugin://socialbuttons/vendor/rrssb/js/rrssb.min.js', -999);
 
         $twig = $this->grav['twig'];
-        $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-        $twig->twig_vars['socialbuttons_domain'] = $protocol . $_SERVER["HTTP_HOST"];
+
+        if ( empty($this->grav['config']->get('plugins.socialbuttons.base_url_shared')) ) {
+            $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+            $my_shared_host = $protocol . $_SERVER["HTTP_HOST"];
+        } else {
+            $my_shared_host = $this->grav['config']->get('plugins.socialbuttons.base_url_shared');
+        }
+
+        $twig->twig_vars['socialbuttons_domain'] = $my_shared_host;
         $twig->twig_vars['socialbuttons_buttons'] = $this->config->get('plugins.socialbuttons.buttons');
     }
 }
