@@ -1,4 +1,5 @@
 enabled: true
+base_url_shared: http://localhost
 buttons:
   facebook: 
     enabled: true
