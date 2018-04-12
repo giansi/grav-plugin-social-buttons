@@ -38,7 +38,7 @@ class SocialButtonsPlugin extends Plugin
     public function onTwigSiteVariables()
     {
         $this->grav['assets']->addCss('plugin://socialbuttons/vendor/rrssb/css/rrssb.css', -999);
-        $this->grav['assets']->addJs('plugin://socialbuttons/vendor/rrssb/js/rrssb.min.js', -999);
+        $this->grav['assets']->addJs('plugin://socialbuttons/vendor/rrssb/js/rrssb.min.js', ['group' => 'bottom', 'priority' => -999]);
 
         $twig = $this->grav['twig'];
         $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
