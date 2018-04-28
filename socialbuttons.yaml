@@ -39,6 +39,9 @@ buttons:
   github: 
     enabled: false
     label: Github 
+  whatsapp:
+    enabled: false
+    label: WhatsApp
   email: 
     enabled: true
     label: Email

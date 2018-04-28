@@ -284,6 +284,26 @@ form:
         validate:
           type: text
         help: Enable or disable the github button
+
+      buttons.whatsapp.enabled:
+        type: toggle
+        label: WhatsApp button
+        highlight: 1
+        default: 0
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
+        help: Enable or disable the WhatsApp button
+
+      buttons.whatsapp.label:
+        type: text
+        label: WhatsApp button label
+        highlight: 1
+        validate:
+          type: text
+        help: Enable or disable the WhatsApp button
           
       buttons.email.enabled:
         type: toggle
